@@ -26,8 +26,8 @@ const App: React.FC = () => {
               If the focus of the image is specific, you can adjust object-position (e.g. object-top).
            */}
           <img 
-            src='/public/1.png' 
-            alt="Orhan Kiranoglu in gallery" 
+            src='/1.png' 
+            alt="Orhan Kiranoglu in his gallery" 
             className="w-full h-full object-cover object-center opacity-95 hover:opacity-100 transition-opacity duration-700"
           />
         </div>
