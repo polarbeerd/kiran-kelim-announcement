@@ -47,14 +47,6 @@ const ContactCard: React.FC<ContactCardProps> = ({ details, label }) => {
             <p>{details.address.street}</p>
             <p>{details.address.zipCity}</p>
             <p>{details.address.country}</p>
-            <a 
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(details.address.street + ' ' + details.address.zipCity)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2 text-xs uppercase tracking-wider text-stone-400 hover:text-stone-800 border-b border-transparent hover:border-stone-800 transition-all"
-            >
-              Google Maps &rarr;
-            </a>
           </div>
         </div>
       </div>

@@ -11,17 +11,12 @@ const App: React.FC = () => {
   const content = lang === 'de' ? CONTENT_DE : CONTENT_EN;
 
   return (
-    <div className="min-h-screen flex flex-col items-center py-8 md:py-16 px-4 sm:px-6 bg-stone-50">
+    <div className="min-h-screen flex flex-col items-center bg-stone-50">
       
-      {/* Top Navigation / Language Switch */}
-      <div className="w-full max-w-3xl flex justify-end mb-4">
-        <LanguageSwitch currentLang={lang} onToggle={setLang} />
-      </div>
+      {/* Brand Header */}
+      <Header currentLang={lang} onToggle={setLang} />
 
-      <main className="w-full max-w-3xl bg-[#fdfdfc] shadow-xl md:rounded-lg overflow-hidden border border-stone-100">
-        
-        {/* Brand Header */}
-        <Header />
+      <main className="w-full max-w-3xl bg-[#fdfdfc] shadow-2xl md:rounded-b-lg overflow-hidden border-x border-b border-stone-100 relative">
 
         {/* Hero Image */}
         <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden bg-stone-200">
@@ -31,7 +26,7 @@ const App: React.FC = () => {
               If the focus of the image is specific, you can adjust object-position (e.g. object-top).
            */}
           <img 
-            src={HERO_IMAGE_URL} 
+            src='/1.png' 
             alt="Orhan Kiranoglu in his gallery" 
             className="w-full h-full object-cover object-center opacity-95 hover:opacity-100 transition-opacity duration-700"
           />
