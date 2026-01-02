@@ -27,7 +27,7 @@ const App: React.FC = () => {
            */}
           <img 
             src='/public/1.png' 
-            alt="Orhan Kiranoglu in his gallery" 
+            alt="Orhan Kiranoglu in gallery" 
             className="w-full h-full object-cover object-center opacity-95 hover:opacity-100 transition-opacity duration-700"
           />
         </div>
